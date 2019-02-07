@@ -4,7 +4,7 @@ Let's create a user interface, so that the results are presented cleanly, clearl
 
 --- task ---
 
-Right click on this image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, you can drag and drop the images straight into your notebook.
+Right click on this image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, or using Wolfram on a Raspberry Pi, you can drag and drop the images straight into your notebook.
 
 ![Magic 8 Ball](images/magiceightball.png)
 
