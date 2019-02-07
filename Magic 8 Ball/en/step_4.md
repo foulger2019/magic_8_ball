@@ -39,4 +39,8 @@ Column[{question = "Should I have pizza for breakfast?";
 Dynamic[Text[answer]]
 ```
 
+In order to get a new response, you need to type a new question into the `InputField` and press the button.
+
  --- /task ---
+
+Congratulations, you have made a Magic Eight Ball!
