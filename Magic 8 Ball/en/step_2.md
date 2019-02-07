@@ -34,10 +34,18 @@ RandomChoice[noncomittal]
 RandomChoice[negatives]
 ```
 
+---task---
+`Join` all the possible responses into one list.
+
+```
+allresponses = Join[positives, noncomittal, negatives];
+```
+---/task---
+
 It would be nice if we could have a button which lets us interact better with the code.
 
 ```
-Button["Ask Again", Print[RandomChoice[positives]]]
+Button["Ask Again", Print[RandomChoice[allresponses]]]
 ```
 
 The problem with this is that every time you press the button, it prints another answer under the previous one. It would be better if the new answer replaced the previous answer. In order to do this, we need to set up a `Dynamic` variable for the answer, which updates whenever you press the button.
@@ -48,7 +56,7 @@ Create a `Dynamic` button which gives us a new random response each time we pres
 ```
 ans = "Focus hard on your question and ask the ball";
 Button["Ask Again",
- ans = RandomChoice[positives]
+ ans = RandomChoice[allresponses]
  ]
 Dynamic[ans]
 ```
