@@ -15,7 +15,7 @@ title: What you will need
 ---
 ### Hardware
 
-+ Either a computer or a Raspberry Pi
++ Either a desktop computer, laptop, or a Raspberry Pi
 
 ### Software
 
