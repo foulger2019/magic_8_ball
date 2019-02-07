@@ -19,6 +19,7 @@ answer = "Concentrate on your question";
 Dynamic[answer]
 
 ```
+If you are using the browser version of Wolfram, the answer will not change when you press the button, we will fix that later in this step.
 
 --- /task ---
 
@@ -43,7 +44,9 @@ Which[
  Test the `Which` statement with a few different questions to check that it is giving positive, negative or neural responses.
  
  ```question = "Do I love puppies?"```
+ 
  ```question = "Is my phone broken?"```
+ 
  ```question = "Should I go running?"```
 
  --- /task ---
@@ -66,5 +69,7 @@ Incorporate this `Which` statement into the `InputField` and `Button` interface.
   ]}
 Dynamic[answer]
 ```
+
+You will need to change the question in the InputField box, and press the button, in order to change the answer.
  
   --- /task ---
