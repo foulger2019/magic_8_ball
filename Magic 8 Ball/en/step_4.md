@@ -3,24 +3,15 @@
 Let's create a user interface, so that the results are presented cleanly, clearly, and interestingly.
 
 --- task ---
+
 Import an image of a magic 8 ball to accompany your interface.
 
+![Magic 8 Ball](images/magiceightball.png)
 
-![Magic 8 Ball](images/8Ball.png)
-
-
-Copy/paste the image into the notebook, and use `ImageResize` to resize the image so that it is a 150 pixel square.
-
-![Resize your image](images/ImageResize.png)
---- /task ---
-
---- task ---
-
-When you run the code for `ImageResize`, the output will be the resized image.
-
-Click on the resized image and assign the image to variable name `eightButton`.
+Assign the image to variable name `eightButton`.
 
 --- /task ---
+
  
 --- task ---
 Change the button to look like a magic 8 ball instead of saying 'Answer'.
