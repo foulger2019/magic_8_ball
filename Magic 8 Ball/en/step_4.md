@@ -24,14 +24,12 @@ answer = Text["Concentrate on your question"];
 Column[{question = "Should I have pizza for breakfast?";
   InputField[Dynamic[question], String], 
   Button[eightButton,
-    Which[
      Classify["Sentiment", question] == "Negative", 
      answer = RandomChoice[negatives],
      Classify["Sentiment", question] == "Neutral", 
      answer = RandomChoice[noncomittal], 
      Classify["Sentiment", question] == "Positive", 
-     answer = RandomChoice[positives]
-    ],
+     answer = RandomChoice[positives],
    Appearance -> None]
   }]
 Dynamic[Text[answer]]
