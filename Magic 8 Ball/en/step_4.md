@@ -24,7 +24,6 @@ answer = Text["Concentrate on your question"];
 Column[{question = "Should I have pizza for breakfast?";
   InputField[Dynamic[question], String], 
   Button[eightButton,
-   Dynamic[
     Which[
      Classify["Sentiment", question] == "Negative", 
      answer = RandomChoice[negatives],
@@ -32,7 +31,6 @@ Column[{question = "Should I have pizza for breakfast?";
      answer = RandomChoice[noncomittal], 
      Classify["Sentiment", question] == "Positive", 
      answer = RandomChoice[positives]
-     ]
     ],
    Appearance -> None]
   }]

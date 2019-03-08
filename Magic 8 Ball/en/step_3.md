@@ -12,9 +12,7 @@ Make an `InputField` so that users can input their question, and a `Button` to d
 ```
 answer = "Concentrate on your question";
 {InputField[Dynamic[question], String], 
- Button["Answer",
-  Dynamic[answer = RandomChoice[allresponses]
-   ]
+ Button["Answer", answer = RandomChoice[allresponses]
   ]}
 Dynamic[answer]
 
@@ -58,14 +56,13 @@ Incorporate this `Which` statement into the `InputField` and `Button` interface.
  answer = "Concentrate on your question";
 {InputField[Dynamic[question], String], 
  Button["Answer",
-  Dynamic[Which[
+  Which[
  Classify["Sentiment", question] == "Negative", 
  answer = RandomChoice[negatives], 
  Classify["Sentiment", question] == "Neutral", 
  answer = RandomChoice[noncomittal], 
  Classify["Sentiment", question] == "Positive", 
  answer = RandomChoice[positives]]
-   ]
   ]}
 Dynamic[answer]
 ```
